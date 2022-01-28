@@ -1,0 +1,14 @@
+<template>
+
+    <lightning-card title={name}>
+        
+        <p>
+        <template if:true={showDetails}>
+            {details}
+        </template>
+        </p>
+        <lightning-button slot="actions" onclick={toggleDetail} label={actionButtonLabel}></lightning-button>
+
+    </lightning-card>
+    
+</template>

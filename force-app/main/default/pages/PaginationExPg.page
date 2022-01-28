@@ -1,0 +1,19 @@
+<apex:page controller="Pagination" >
+    <apex:form >
+    <apex:pageBlock id="details">
+        <apex:pageBlockTable value="{!acclist}" var="acc">
+            <apex:column value="{!acc.Name}"/>
+             <apex:column value="{!acc.website}"/>
+             <apex:column value="{!acc.AnnualRevenue}"/>
+             <apex:column value="{!acc.Description}"/>
+            <apex:column value="{!acc.Type}"/>
+        </apex:pageBlockTable>
+        <apex:pageBlockButtons >
+        
+            <apex:commandButton action="{!previous}" value="Previous" reRender="details"/>
+             <apex:commandButton action="{!next}" value="Next" reRender="details"/>
+        </apex:pageBlockButtons>>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

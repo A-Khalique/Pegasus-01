@@ -1,0 +1,15 @@
+<apex:page controller="StudentListController">
+    <apex:form >
+    <apex:outputPanel id="StudentDetails">
+        {!student}<br/> 
+        {!studentList}<br/>
+        
+        <apex:repeat value="{!studentList}" var="s">
+            {!s}<br/>
+        </apex:repeat>
+    
+    </apex:outputPanel>
+        
+        <apex:commandButton value="Fetch Students" action="{!fetchStudent}"/>
+    </apex:form>
+</apex:page>

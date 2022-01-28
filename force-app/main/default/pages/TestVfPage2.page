@@ -1,0 +1,19 @@
+<apex:page standardController="account" >
+    <h1>
+        Congratulations
+    </h1>
+    <p>
+        This is Your {!account.name} Page...!!
+    </p>
+    
+    <apex:pageBlock >
+        <apex:pageBlockSection title="Account Details">
+            
+            <apex:outputField value="{!account.name}"/><br/>
+            <apex:outputField label="Owner Name" value="{!account.owner.name}"/>
+    
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+
+</apex:page>

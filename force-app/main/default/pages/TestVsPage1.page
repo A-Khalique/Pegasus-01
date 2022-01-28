@@ -1,0 +1,16 @@
+<apex:page standardController="account" >
+    
+    <h1>
+        Hello World.....!!!!
+        {!account.Name}
+    </h1>
+    
+    <h1>
+        Hello World.....!!!!
+        {!$User.Email}
+        
+    </h1>
+
+
+
+</apex:page>
